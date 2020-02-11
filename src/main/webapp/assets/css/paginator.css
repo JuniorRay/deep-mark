@@ -1,0 +1,41 @@
+﻿/*css default style pagination*/
+div.paginator {
+    margin: 0 10px 20px 10px;
+    clear: both;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+    div.paginator a, div.paginator span {
+        display: block;
+        float: left;
+        margin: 2px 0 0 -1px;
+        padding: 4px 12px;
+        line-height: 20px;
+        height: 20px;
+        border: 1px solid #e1e1e1;
+        background: #fff;
+        color: #333;
+        text-decoration: none;
+    }
+
+    div.paginator span:first-child {
+        border-left: 1px solid #e1e1e1;
+    }
+
+    div.paginator a:hover {
+        color: #666;
+        background: #eee;
+    }
+
+    div.paginator span.current {
+        color: #fff;
+        background: #488FCD;
+        border-color: #488FCD;
+    }
+
+    div.paginator span.disabled {
+        color: #999;
+        background: #fff;
+    }

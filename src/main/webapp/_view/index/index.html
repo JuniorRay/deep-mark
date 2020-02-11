@@ -1,0 +1,231 @@
+#@admin_layout()
+#define admin_main()
+<link type="text/css" rel="stylesheet" href="/assets/css/mark/mark.css" />
+
+<div class="left-side">
+    <div class="left-side-content">
+        <div class="content-top">
+            <fieldset class="layui-elem-field layui-field-title" style="">
+                <legend>类型标签</legend>
+            </fieldset>
+            <div class="tab-list">
+                <div class=" softSz-btn  ">目标标签</div>
+                <div class=" softSz-btn softSz-btn-primary_space" style="padding: 0">结构化标签</div>
+            </div>
+
+        </div>
+        <div class="content-bottom">
+            <form class="layui-form" action="">
+                <fieldset class="layui-elem-field subTool typeGroupTool" style="">
+                    <legend>类别</legend>
+                    <div class="layui-form-item typeGroup">
+                        <div>
+                            <input type="radio" name="type" mode="human" lay-filter="human" value="人形" title="人形" checked/>
+                            <input type="radio" name="type" mode="face" lay-filter="face" value="人脸" title="人脸" />
+                        </div>
+                        <div>
+                            <input type="radio" name="type" mode="car" lay-filter="car" value="车形" title="车形" />
+                            <input type="radio" name="type" mode="dustbin" lay-filter="dustbin" value="垃圾箱" title="垃圾箱" />
+
+                        </div>
+                        <div>
+                            <input type="radio" name="type" mode="bird" lay-filter="bird" value="鸟" title="鸟" />
+                            <input type="radio" name="type" mode="bike" lay-filter="bike" value="自行车" title="自行车" />
+                        </div>
+                        <div>
+                            <input type="radio" name="type" mode="truck" lay-filter="truck" value="货车" title="货车" />
+                            <input type="radio" name="type" mode="bus" lay-filter="bus" value="大巴" title="大巴" />
+
+                        </div>
+                        <div>
+                            <input type="radio" name="type" mode="horse" lay-filter="horse" value="马" title="马" />
+                            <input type="radio" name="type" mode="dog" lay-filter="dog" value="狗" title="狗" />
+                        </div>
+                        <div>
+                            <input type="radio" name="type" mode="cat" lay-filter="cat" value="猫" title="猫" />
+                            <input type="radio" name="type" mode="tiger" lay-filter="tiger" value="老虎" title="老虎" />
+
+                        </div>
+
+
+
+
+                    </div>
+                </fieldset>
+
+                <fieldset class="layui-elem-field subTool image-list-tool" style="">
+                    <legend>已导入图</legend>
+                    <ol class=" image-list">
+
+                        <!--<li class="image-item">-->
+                        <!--test.jpg-->
+
+                        <!--</li>-->
+                        <!--<li class="image-item">-->
+                        <!--test.jpg-->
+
+                        <!--</li>-->
+                        <!--<li class="image-item">-->
+                        <!--test.jpg-->
+
+                        <!--</li>-->
+                        <!--<li class="image-item">-->
+                        <!--test.jpg-->
+
+                        <!--</li>-->
+                        <!--<li class="image-item">-->
+                        <!--test.jpg-->
+
+                        <!--</li>-->
+                        <!--<li class="image-item">-->
+                        <!--font_511346_3abgpjmquo50cnmi-->
+
+                        <!--</li>-->
+                    </ol>
+                </fieldset>
+
+
+
+
+            </form>
+            <div class="batch-wrap">
+
+                <fieldset class="layui-elem-field subTool" style="">
+                    <legend>批量操作</legend>
+                    <div class="layui-form-item">
+                        <div class="" style="">
+                            <input type="button" class="softSz-btn  softSz-btn-mini " id="importBtn" name="submitBtn" mode="submitBtn" value="导入" title="批量导入" />
+                            <input type="button" class="softSz-btn  softSz-btn-mini " id="deleteBtn" name="nextBtn" mode="nextBtn" value="删除" title="删除当前" />
+
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="center-wrap">
+    <div class="canvas-box-wrap"   style="">
+        <div id="canvas-box" style="text-align:center;display:flex;width:100%;height:100%;justify-content: center;align-items: center">
+            <canvas id="canvasId" width="500" height="500" style="background-color: #000;">不支持canvas</canvas>
+            <!--<div class="gridCell hidden"></div>-->
+
+        </div>
+    </div>
+</div>
+
+<div class="right-side">
+    <div class="right-side-content">
+        <div class="content-top">
+            <fieldset class="layui-elem-field layui-field-title" style="">
+                <legend >工具栏目</legend>
+            </fieldset>
+        </div>
+        <div class="content-bottom">
+            <form class="layui-form" action="">
+                <fieldset class="layui-elem-field subTool" style="">
+                    <legend>选择画笔</legend>
+                    <div class="layui-form-item  toolModeGroup">
+                        <div>
+                            <input type="radio" name="toolMode" lay-filter="rectangle" mode="rectangle" value="矩形" title="矩形" checked/>
+
+                            <input type="radio" name="toolMode" lay-filter="cursor" mode="cursor" value="鼠标" title="鼠标"  />
+                        </div>
+                        <div>
+                            <input type="radio" name="toolMode" lay-filter="trapezoid" mode="trapezoid"  value="梯形" title="梯形" />
+
+                            <!--<input type="radio" name="toolMode" lay-filter="line" mode="line" value="线条"  title="线条" />-->
+                            <input type="radio" name="toolMode" lay-filter="triangle" mode="triangle" value="三角形"  title="三角形" />
+                        </div>
+                        <div>
+                            <input type="radio" name="toolMode" lay-filter="polygon" mode="polygon" value="多边形"  title="多边形" />
+
+                            <input type="radio" name="toolMode" lay-filter="circle" mode="circle" value="圆形"  title="圆形" />
+                        </div>
+                        <div>
+                            <input type="radio" name="toolMode" lay-filter="arrows" mode="arrows" value="箭头"  title="箭头" />
+                            <input type="radio" name="toolMode" lay-filter="parallelogram" mode="parallelogram" value="平行四边"  title="平行四边" />
+                        </div>
+                        <!--<div style="">-->
+                        <!--<input type="radio" name="toolMode" lay-filter="trapezoid" mode="trapezoid"  value="梯形" title="梯形" />-->
+                        <!--<input style="visibility: hidden" type="radio" name="toolMode" mode="trapezoid"  value="&nbsp;" title="" />-->
+                        <!--</div>-->
+
+
+                    </div>
+                </fieldset>
+
+                <fieldset class="layui-elem-field subTool" style="">
+                    <legend>编辑工具</legend>
+                    <div class="layui-form-item edit-tool-wrap">
+                        <div>
+                            <input type="button" class="softSz-btn  softSz-btn-mini " onclick="drawUtil.clear()" name="clear" mode="clear" value="清除" title="清除绘制" />
+                            <input type="button" class="softSz-btn  softSz-btn-mini " id="grid-line" name="gridLine" mode="gridLine" value="辅助线" title="辅助线" />
+                        </div>
+                        <div class="rotateGroup">
+                            <input type="button" class="softSz-btn  softSz-btn-mini " name="rightRotate" mode="rightRotate" value="右转" title="图像右转" />
+                            <input type="button" class="softSz-btn  softSz-btn-mini " name="leftRotate" mode="leftRotate" value="左转" title="图像左转" />
+                        </div>
+                        <div class="rollingOver">
+                            <input style="" type="button" class="softSz-btn  softSz-btn-mini " name="rollingOverUp" mode="rollingOverUp" value="上下翻转" title="上下翻转" />
+
+                            <input style="" type="button" class="softSz-btn  softSz-btn-mini " name="rollingOverLeft" mode="rollingOverLeft" value="左右翻转" title="左右翻转" />
+
+                        </div>
+                        <div>
+                            <input type="button" class="softSz-btn  softSz-btn-mini enlarge"  name="enlarge" mode="enlarge" value="框选放大" title="框选放大" />
+
+                            <input type="button" class="softSz-btn  softSz-btn-mini resetView"  name="resetView" mode="resetView" value="关闭放大" title="关闭放大" />
+
+
+                        </div>
+
+
+                    </div>
+                </fieldset>
+
+                <fieldset class="layui-elem-field subTool" style="">
+                    <legend>画笔设置</legend>
+                    <div class="layui-form-item">
+                        <div class="paint-setting-wrap">
+                            <label class="layui-form-label">画笔大小：</label>
+                            <input type="number" id="lineWidth" value="1" class=" layui-input softSz-btn-mini" min="1"  max="10" name="lineWidth" placeholder=""  title="画笔粗细宽度" />
+                        </div>
+                        <div class="paint-setting-wrap">
+                            <label class="layui-form-label">画笔颜色：</label>
+                            <input type="" class=" layui-input  softSz-btn-mini" name="strokeStyle" placeholder=""  title="画笔颜色" id="colorPane"/>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+
+            </form>
+            <div class="submit-wrap">
+                <fieldset class="layui-elem-field subTool" style="">
+                    <legend>确认选项</legend>
+                    <div class="layui-form-item">
+                        <div class="" style="">
+                            <input type="button" class="softSz-btn  softSz-btn-mini " name="submitBtn" id="submitBtn" mode="submitBtn" value="提交" title="提交" />
+                            <input type="button" class="softSz-btn  softSz-btn-mini " name="nextBtn" mode="nextBtn" value="跳过" title="跳过" />
+
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="/assets/jquery/jquery.min-3.3.1.js"></script>
+<script src="/assets/js/Utils.js"></script>
+
+<script type="text/javascript" src="/assets/js/DrawTools.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+
+#end

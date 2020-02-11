@@ -1,0 +1,241 @@
+.layui-field-title {
+    margin: 0px;
+    border-width: 1px 0px 0px;
+    text-align: center;
+}
+.layui-elem-field legend {
+    padding: 5px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+.left-side{
+    /*padding: 10px;*/
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: rgb(238, 238, 238)
+}
+.center-wrap{
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-bottom: 0px;
+    width:70%;
+    height:100%;
+    float: left;
+    background-color: rgb(238, 238, 238)
+
+
+}
+.right-side{
+
+    /*padding: 10px;*/
+    padding-bottom: 0px;
+
+    box-sizing: border-box;
+    width: 15%;
+    height:100%;
+    float: left;
+    background-color: rgb(238, 238, 238)
+
+}
+.right-side-content,.left-side-content{
+    padding: 0 1px;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+
+.content-top{
+    width: 100%;
+    height: 5.7%;
+}
+.content-bottom{
+    position: relative;
+
+    width: 100%;
+    height: 94.3%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.content-bottom .layui-form{
+    overflow: hidden;
+    /* position: relative; */
+    height: 85%;
+    /* position: relative; */
+    overflow-y: hidden;
+}
+.content-bottom .layui-form +.submit-wrap,.batch-wrap{
+    padding-top: .1vh;
+    width: 100%;
+    /* position: relative; */
+    height: 15%;
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.subTool{
+    padding: 0 1vh;
+    margin: 0;
+    text-align: left;
+}
+.subTool legend{
+    width: 55%;
+    height: 15%;
+    font-size: 1vw;
+}
+.subTool .typeGroup{
+    overflow-y: auto;
+    height: 85%;
+}
+.subTool .layui-form-item{
+    margin-bottom: 1.3vh;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+.subTool .layui-form-item>div{
+    align-items: center;
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+.subTool .layui-form-item>div>.layui-form-radio{
+    width: 50%;
+    float: left;
+    margin: 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.layui-form-radio span {
+    font-size: .7vw;
+}
+.paint-setting-wrap{
+    box-sizing: border-box;
+    padding-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paint-setting-wrap .layui-form-label{
+    white-space: nowrap;
+    /* font-family: MicrosoftYaHei!important; */
+    font-size: 0.59vw;
+    /* color: #ffffff; */
+    box-sizing: border-box;
+    padding: 0 0.2vw;
+}
+.paint-setting-wrap input{
+    padding: 0;
+    text-align: center;
+}
+.submit-wrap .subTool,.batch-wrap .subTool{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.edit-tool-wrap div{
+    padding-bottom: 1vh;
+}
+.edit-tool-wrap div input{
+    width: 40%;
+}
+.edit-tool-wrap .softSz-btn-mini{
+    padding: 0;
+}
+.image-list-tool{
+    /*width: 100%;*/
+    height: 49%;
+    overflow: auto;
+}
+.image-list-tool legend{
+    height: 15%;
+}
+.image-list{
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+
+}
+.image-list li {
+    padding: 0 10px;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    white-space: nowrap;
+    /* display: inline-block; */
+    box-sizing: border-box;
+}
+ .image-item{
+    cursor: pointer;
+    line-height: 30px;
+    /*display: flex!important;*/
+    /*justify-content: flex-start!important;*/
+}
+.image-item:hover{
+    background: #0a6ebd;
+}
+.tab-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tab-list div{
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.left-side-content .content-top{
+    height: 13%;
+}
+.left-side-content .content-bottom{
+    height: 87%;
+}
+.typeGroupTool{
+    height: 50%;
+}
+.canvas-box-wrap{
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+}
+.selected{
+    background: #0a6ebd !important;
+}
+
+#canvas-box{
+    position: relative;
+
+
+}
+/*css实现的网格线*/
+/*#canvas-box .gridCell{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*bottom: 0;*/
+    /*background-image: linear-gradient(90deg, rgba(0, 0, 0, .3) 10%, rgba(0, 0, 0, 0) 10%),*/
+    /*linear-gradient(rgba(0, 0, 0, .3) 10% ,rgba(0, 0, 0, 0) 10%);*/
+    /*background-size: 10px 10px;*/
+    /*!*事件穿透*!*/
+    /*pointer-events: none;*/
+/*}*/
+.hidden{
+    display: none;
+}

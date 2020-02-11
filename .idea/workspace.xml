@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37badbed-e363-48a9-85cb-2ee7c4cb5379" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/mark/mark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.11.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/使用说明.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/启动说明/API说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/启动说明/使用说明.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project.bak" beforeDir="false" afterPath="$PROJECT_DIR$/.project.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/sql/create_user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/sql/fun.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/sql/iaac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/sql/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jfinal.bat" beforeDir="false" afterPath="$PROJECT_DIR$/jfinal.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/CacherConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/CacherConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/JfinalDbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/JfinalDbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/MarkServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/MarkServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/RoutesKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/RoutesKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/account/AccountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/account/AccountDeleteValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/account/AccountEditValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/account/AccountPageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/account/AccountSaveValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/account/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/account/AccountUpdateValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/common/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/common/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/common/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/common/ErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/common/PageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/common/PageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/index/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/index/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/interceptor/GlobalActionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/interceptor/GlobalActionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/DateTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/DateTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/IpKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/IpKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/JsonKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/JsonKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/JsoupFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/StrUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/kit/StrUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/login/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/login/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/login/LoginValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/login/LoginValidatorSingle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/logout/LogoutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/RolePermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/Session.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/_JFinalDemoGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/_JFinalDemoGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/_MappingKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/_MappingKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/base/BaseSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/model/base/BaseSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/res/ResController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/res/ResController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/res/ResUploadValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/res/ResUploadValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/role/RoleAddValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/role/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/role/RoleEditValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/role/RoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/role/RoleUpdateValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config-dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config-dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config-pro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config-pro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/undertow.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/undertow.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_side.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_side.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_side.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/index/admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/index/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/index/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/activate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/forget.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/set.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/user/userAdd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/left2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/right2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/test/test2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/test/testHuman.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery-1.4.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/lib/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/启动说明/___极速打包部署.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/___极速打包部署.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/启动说明/blog.sql" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/blog.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/启动说明/undertow-config-demo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/undertow-config-demo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/启动说明/启动说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/启动说明.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_side.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="43" selection-start-line="43" selection-end-line="64" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
+                <element signature="n#style#1;n#table#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/启动说明/启动说明.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/启动说明/API说明.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/启动说明/使用说明.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>#3</find>
+      <find>alert</find>
+      <find>submit-wrap</find>
+      <find>edit-tool-wrap</find>
+      <find>subTool</find>
+      <find>softSz-btn-primary_space</find>
+      <find>banBrowserDefaultMouseEvents</find>
+      <find>logo</find>
+      <find>repaint</find>
+      <find>colorpane</find>
+      <find>evt</find>
+      <find>colorclose</find>
+      <find>console.log</find>
+      <find>coloropen</find>
+      <find>inputcolor</find>
+      <find>id</find>
+      <find>bgPictureConfig</find>
+      <find>colorPane</find>
+      <find>doclick</find>
+      <find>paint-setting-wrap</find>
+      <find>image-list-tool</find>
+      <find>$.ajax</find>
+      <find>导入</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>doClick</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_footer.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/base.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/utils/color-select.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/css/admin.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" />
+        <option value="$PROJECT_DIR$/doc/sql/iaac.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_side.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_header.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" />
+        <option value="$PROJECT_DIR$/启动说明/API说明.txt" />
+        <option value="$PROJECT_DIR$/启动说明/启动说明.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="111" />
+    <option name="y" value="90" />
+    <option name="width" value="1440" />
+    <option name="height" value="798" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="deep-learning-mark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep-learning-mark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deep-learning-mark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep-learning-mark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deep-learning-mark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep-learning-mark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deep-learning-mark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep-learning-mark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deep-learning-mark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep-learning-mark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deep-learning-mark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep-learning-mark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deep-learning-mark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deep-learning-mark" type="462c0819:PsiDirectoryNode" />
+              <item name="启动说明" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/启动说明" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/img/test" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/assets/css/mark" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37badbed-e363-48a9-85cb-2ee7c4cb5379" name="Default Changelist" comment="" />
+      <created>1579052896389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579052896389</updated>
+      <workItem from="1579052897909" duration="34029000" />
+      <workItem from="1580362374811" duration="24561000" />
+      <workItem from="1580479039374" duration="5484000" />
+      <workItem from="1580572697604" duration="598000" />
+      <workItem from="1580725583372" duration="481000" />
+      <workItem from="1580805320279" duration="550000" />
+      <workItem from="1580884586529" duration="1122000" />
+      <workItem from="1581071956963" duration="598000" />
+      <workItem from="1581396867283" duration="4188000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="71611000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="111" y="90" width="1440" height="798" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2473573" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/front.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/paginator.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12330">
+          <caret line="822" column="45" selection-start-line="822" selection-start-column="27" selection-end-line="822" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17255" column="17" selection-start-line="17255" selection-start-column="17" selection-end-line="17255" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/right2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/utils/color-select.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_side.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/detail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/utils/ToolsController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/font_511346_3abgpjmquo50cnmi.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/left2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/test.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sql/iaac.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sql/create_user.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sql/init.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sql/fun.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/testHuman.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_search.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_noside_layout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/jquery-1.4.4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_side.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="43" selection-start-line="43" selection-end-line="64" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#table#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/启动说明/API说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/启动说明/使用说明.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/启动说明/启动说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

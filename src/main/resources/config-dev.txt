@@ -1,0 +1,14 @@
+# config
+mysql.jdbcUrl = jdbc:mysql://localhost/iaac-deep?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+mysql.user = root
+mysql.password =
+
+mysql.initialSize = 1
+mysql.minIdle = 1
+mysql.maxActive = 10
+
+#是否开启开发者模式
+devMode = true
+
+#base upload path 上传路径（绝对路径）
+base.upload.path=upload
