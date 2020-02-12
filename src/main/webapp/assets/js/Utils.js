@@ -74,12 +74,17 @@ Utils.colorSelect=Utils.prototype.colorSelect=function(obj){
     var currentDom=document.getElementById(domId);
     // currentDom.parentNode.style.position="relative"
 
+    //获取currentDom相对浏览器的位置矩形
+    var clientRect=currentDom.getBoundingClientRect();
 
-    var newDiv=document.createElement("div");
-    newDiv.style.position="absolute";
-    newDiv.style.zIndex="999";
-    newDiv.setAttribute('id','colorSelectPane')
-    newDiv.style.display="none";
+    var colorPaneObj=document.createElement("div");
+    // debugger
+    colorPaneObj.style.position="fixed";
+    colorPaneObj.style.top=clientRect.y+"px";
+    colorPaneObj.style.left=clientRect.x+"px";
+    colorPaneObj.style.zIndex="999";
+    colorPaneObj.setAttribute('id','colorSelectPane')
+    colorPaneObj.style.display="none";
 
 
     //在该元素后面追加节点
@@ -93,7 +98,7 @@ Utils.colorSelect=Utils.prototype.colorSelect=function(obj){
             //如果不是，则插入在目标元素的下一个兄弟节点 的前面。也就是目标元素的后面
         }
     }
-    insertAfter(newDiv,currentDom);
+    insertAfter(colorPaneObj,currentDom);
     var colorSelectPane=document.getElementById('colorSelectPane');
     var colorVal="";
     //获取选中的颜色
@@ -127,13 +132,13 @@ Utils.colorSelect=Utils.prototype.colorSelect=function(obj){
             //网页可见区域高
             var pageHeight =document.body.clientHeight;
             var toolsPosition=colorSelectPane.getBoundingClientRect();
-            // 元素上边距离页面上边的距离
+            // colorSelectPane元素盒子左上角点位距离页面上边的距离
             var toolsTop=toolsPosition.top;
-            // 元素右边距离页面左边的距离
+            // colorSelectPane元素盒子左上角点位距离页面右边的距离
             var toolsRight=toolsPosition.right;
-            // 元素下边距离页面上边的距离
+            // colorSelectPane元素盒子左上角点位距离下边的距离
             var toolsBottom=toolsPosition.bottom;
-            // 元素左边距离页面左边的距离
+            // colorSelectPane元素盒子左上角点位距离页面左边的距离
             var toolsLeft=toolsPosition.left;
 
             //如果组件右边超出
@@ -144,7 +149,7 @@ Utils.colorSelect=Utils.prototype.colorSelect=function(obj){
             }
             //如果组件下边超出
             if(toolsBottom>pageHeight){
-                colorSelectPane.style.bottom = 0 + "px";
+                colorSelectPane.style.bottom = 50 + "px";
                 colorSelectPane.style.top = "auto";
             }
             // //如果组件左边超出
@@ -192,11 +197,7 @@ Utils.colorSelect=Utils.prototype.colorSelect=function(obj){
             +colorTable+'</table>';
 
         colorSelectPane.innerHTML=colorTable;
-        var current_x = currentDom.offsetLeft;
-        var current_y = currentDom.offsetTop;
-        //alert(current_x + "-" + current_y)
-        colorSelectPane.style.left = current_x + "px";
-        colorSelectPane.style.top = current_y + "px";
+
         //修复控件超出视野的情况
         fixOverView();
 
@@ -207,7 +208,7 @@ Utils.colorSelect=Utils.prototype.colorSelect=function(obj){
 
 
     //生成颜色选择器
-    initcolor();
+   initcolor();
 
 
     return{

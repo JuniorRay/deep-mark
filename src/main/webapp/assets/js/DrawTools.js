@@ -57,11 +57,12 @@
         }
     });
  //恢复鼠标手型，并停止绘图,返回绘制的坐标
- //  var points=drawUtil.end();
- //清除图形,停止绘制
- //  drawUtil.clear();
+//  var points=drawUtil.end();
+//清除图形,停止绘制
+//  drawUtil.clear();
 
  //画网格线
+ //drawUtil.drawGrid()//如果为空，则默认10,10
  drawUtil.drawGrid(10,10);
 
  //关闭网格线
@@ -128,8 +129,8 @@ var DrawTools =(function(){
         setInterval(function(){
             var isOpen=isDevToolsOpened();
             if(isOpen){
-                window.location.reload();//强制刷新
-                alert("已经禁用开发者模式,不允许打开开发者选项，请关闭！")
+            window.location.reload();//强制刷新
+            alert("已经禁用开发者模式,不允许打开开发者选项，请关闭！")
             }
         })
     };
@@ -141,7 +142,7 @@ var DrawTools =(function(){
     /**绘图对象*/
     var context;
     /**绘制的图形列表*/
-        // var shapes=new Array();
+    // var shapes=new Array();
     var graphicType={'cursor':'cursor','line':'line','triangle':'triangle','rectangle':'rectangle','polygon':'polygon','circle':'circle','arrows':'arrows','parallelogram':'parallelogram','trapezoid':'trapezoid'};
     //背景图片绘制配置
     var bgPictureConfig={
@@ -165,8 +166,8 @@ var DrawTools =(function(){
         function drawImage(){
             if(selectRectTemp==null){//如果放大功能没启用
 
-                context.drawImage(img,0,0,canvasObj.width,canvasObj.height);
-                saveDrawingData();
+                    context.drawImage(img,0,0,canvasObj.width,canvasObj.height);
+                    saveDrawingData();
             }else{//放大功能开启后会执行如下
 
 
@@ -274,7 +275,7 @@ var DrawTools =(function(){
         //
         // })
 
-        isBackPoints=true;//是否已经返回点位
+         isBackPoints=true;//是否已经返回点位
 
         return points
     };
@@ -325,19 +326,19 @@ var DrawTools =(function(){
 
 
     var drawGridConfig={//画表格的默认配置
-        stepX:10,
-        stepY:10,
-        color:'#aaa'
+        stepX:'10',
+        stepY:'10',
+        // color:'#aaa'
     };
     /**清空全部*/
     var clearAll=function(isSaveOldData){
 
-        context.clearRect(0,0,canvasObj.width,canvasObj.height);
-        if(isSaveOldData){
+            context.clearRect(0,0,canvasObj.width,canvasObj.height);
+            if(isSaveOldData){
 
-        }
-        // 保存canvas绘画信息
-        saveDrawingData();
+            }
+           // 保存canvas绘画信息
+            saveDrawingData();
 
 
     };
@@ -360,7 +361,7 @@ var DrawTools =(function(){
                 return true;
             }
             //空对象 isOwnEmpty(obj)
-            let isEmptyObject=function(t){
+             let isEmptyObject=function(t){
 
                 for(var key in t){
                     return false
@@ -455,7 +456,7 @@ var DrawTools =(function(){
                 if(isNull(points)){
                     return;
                 }
-                var  firstVal=points.shift();
+               var  firstVal=points.shift();
                 size=points.length;
                 return firstVal;
             },
@@ -736,28 +737,28 @@ var DrawTools =(function(){
         if(btnNum==0){
             // console.log("选择："+ctrlConfig.kind);
             //全局记录点位信息
-            /*
-                        points.push({//顶点
-                            x: e.pageX - cvsClientRect.x,
-                            y: e.pageY - cvsClientRect.y
-                        });*/
+/*
+            points.push({//顶点
+                x: e.pageX - cvsClientRect.x,
+                y: e.pageY - cvsClientRect.y
+            });*/
             // console.log(points);
             //如果是多边形,返回顶点.如果圆则返回圆心坐标,和半径
-            /*   for (var i = 0; i < points.length; i++) {
-                   var point = points[i];
-                   point.x = parseInt(point.x);
-                   point.y = parseInt(point.y);
+         /*   for (var i = 0; i < points.length; i++) {
+                var point = points[i];
+                point.x = parseInt(point.x);
+                point.y = parseInt(point.y);
 
-                   // console.log( point.x+"==="+ point.y);
-                   // if(btnNum==2){
-                   //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
-                   //     console.log(point);
-                   //     console.log( point.x+"==="+ point.y);
-                   // }else{
-                   //     console.log( point);
-                   // }
-               }
-               console.log(point); // 先左键 再右键结束*/
+                // console.log( point.x+"==="+ point.y);
+                // if(btnNum==2){
+                //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
+                //     console.log(point);
+                //     console.log( point.x+"==="+ point.y);
+                // }else{
+                //     console.log( point);
+                // }
+            }
+            console.log(point); // 先左键 再右键结束*/
             //设置起始点
             switch(ctrlConfig.kind){
 
@@ -844,11 +845,11 @@ var DrawTools =(function(){
             }
         }else if(btnNum==2){
             // console.log("右键由于结束多边形绘制");
-            /*           points.push({//结束点
-                           x: e.pageX - cvsClientRect.x,
-                           y: e.pageY - cvsClientRect.y
-                       });
-                       console.log(points);// 直接右键结束时 所有顶点的坐标*/
+ /*           points.push({//结束点
+                x: e.pageX - cvsClientRect.x,
+                y: e.pageY - cvsClientRect.y
+            });
+            console.log(points);// 直接右键结束时 所有顶点的坐标*/
             // console.log((points[points.length-1]).x+"==="+(points[points.length-1]).y);// 右键结束点的坐标
 
 
@@ -861,26 +862,26 @@ var DrawTools =(function(){
                     // 保存canvas绘画信息
                     saveDrawingData();
                     getcurrentGraph().draw();// 开始绘制图形
-                    var points= stopDrawing();//结束绘制
+                   var points= stopDrawing();//结束绘制
 
                 }
             }
 
 
             //如果是多边形,返回顶点.如果圆则返回圆心坐标,和半径
-            /*   for (var i = 0; i < points.length; i++) {
-                   // var point = points[i];
-                   // point.x = parseInt(point.x);
-                   // point.y = parseInt(point.y);
-                   // console.log( point.x+"==="+ point.y);
-                   // if(btnNum==2){
-                   //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
-                   //     console.log(point);
-                   //     console.log( point.x+"==="+ point.y);
-                   // }else{
-                   //     console.log( point);
-                   // }
-               }*/
+         /*   for (var i = 0; i < points.length; i++) {
+                // var point = points[i];
+                // point.x = parseInt(point.x);
+                // point.y = parseInt(point.y);
+                // console.log( point.x+"==="+ point.y);
+                // if(btnNum==2){
+                //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
+                //     console.log(point);
+                //     console.log( point.x+"==="+ point.y);
+                // }else{
+                //     console.log( point);
+                // }
+            }*/
 
 
 
@@ -1018,7 +1019,6 @@ var DrawTools =(function(){
     };
     //鼠标移出
     var mouseOut = function(e){
-
         // console.log("鼠标移出绘制区域"+e.offsetX+","+e.offsetY);
         if(isDrawing()){
             /**恢复canvas面版轨迹信息**/
@@ -1035,51 +1035,51 @@ var DrawTools =(function(){
     };
 
     //canvas画网格
-    function drawGrid(stepX , stepY){//绘制网格
-        //保存canvas绘画信息
-        saveDrawingData();
-        /**
-         * save：用来保存Canvas的状态。save之后，可以调用Canvas的平移、放缩、旋转、错切、裁剪等操作。
-         * restore：用来恢复Canvas之前保存的状态。防止save后对Canvas执行的操作对后续的绘制有影响。
+    function drawGrid(stepX , stepY){//绘制网格,如果为空，则默认10
 
-         对canvas中特定元素的旋转平移等操作实际上是对整个画布进行了操作，所以如果不对canvas进行save以及restore，
-         那么每一次绘图都会在上一次的基础上进行操作，最后导致错位。
-         比如说你相对于起始点每次30度递增旋转，30，60，90.
-         如果不使用save 以及 restore 就会变成30, 90, 150，
-         每一次在前一次基础上进行了旋转。save是入栈，restore是出栈。
-         save()就是把当前状态压入栈中(Push)，restore()相当于弹出栈顶状态(Pop)
-
-
-         * **/
-        // debugger
-        // var context=context;
-        context.save();
-        context.strokeStyle = drawGridConfig.color;
-        context.lineWidth = 0.5 ;
-        for(var i = stepX + 0.5 ; i < context.canvas.width ; i += stepX){
-            context.beginPath();
-            context.moveTo(i , 0);
-            context.lineTo(i , context.canvas.height);
-            context.stroke();
+        if(isBlank(stepY)){
+            stepY=drawGridConfig.stepY;
         }
-        for(var i = stepY + 0.5 ; i < context.canvas.height ; i += stepY){
-            context.beginPath();
-            context.moveTo(0 , i);
-            context.lineTo(context.canvas.width , i);
-            context.stroke();
+        if(isBlank(stepX)){
+            stepY=drawGridConfig.stepX;
         }
-        context.restore();
+        // 如果存在则直接显示
+        if(document.getElementById("gridCellPane")!=null){
+            var divGrid=document.getElementById("gridCellPane");
+            divGrid.style.display="block";
+            divGrid.style.backgroundSize=stepX+"px "+stepY+"px";
 
+            return;
+        }
+        //获取canvas相对浏览器的位置矩形
+        var clientRect=canvasObj.getBoundingClientRect();
+
+        //利用html实现表格(原理是在canvas上面叠加一层事件穿透的div)
+        var divGrid=document.createElement("div");
+        divGrid.style.position="fixed";
+        divGrid.style.top=clientRect.y+"px";
+        divGrid.style.left=clientRect.x+"px";
+        divGrid.style.width=clientRect.width+"px";
+        divGrid.style.height=clientRect.height+"px";
+        divGrid.style.zIndex="999";
+        divGrid.setAttribute('id','gridCellPane')
+        divGrid.style.display="block";
+
+        /*css实现的网格线*/
+        divGrid.style.backgroundImage="linear-gradient(90deg, rgba(0, 0, 0, .3) 10%, rgba(0, 0, 0, 0) 10%)," +
+            "linear-gradient(rgba(0, 0, 0, .3) 10% ,rgba(0, 0, 0, 0) 10%)";
+
+
+        divGrid.style.backgroundSize=stepX+"px "+stepY+"px";
+        /*事件穿透*/
+        divGrid.style.pointerEvents="none";
+        insertAfter(divGrid,canvasObj);
     }
     //canvas 关闭表格
     function closeGrid(){
         isOpenDrawGrid=false;//是否打开表格flag进行复位
-        // //清除canvas所有
-        // clearAll();
-        // //重载原图
-        // loadPicture(bgPictureConfig.pic);
-        restoreDrawingData();
-
+        var divGrid=document.getElementById("gridCellPane");
+        divGrid.style.display="none";
     }
 
     /***======canvas鼠标滚轮滚动放大放小========**/
@@ -1160,6 +1160,17 @@ var DrawTools =(function(){
         restoreDrawingByData(beforeEnlargeData);
     }
 
+    //在该元素后面追加节点
+    function insertAfter(newElement, targetElement) {
+        var parent = targetElement.parentNode;
+        if (parent.lastChild == targetElement) {
+            // 如果最后的节点是目标元素，则直接添加。因为默认是最后
+            parent.appendChild(newElement);
+        } else {
+            parent.insertBefore(newElement, targetElement.nextSibling);
+            //如果不是，则插入在目标元素的下一个兄弟节点 的前面。也就是目标元素的后面
+        }
+    }
 
     //框选放大canvas
     function  enlarge(){
@@ -1176,17 +1187,6 @@ var DrawTools =(function(){
         selector.style.display='none';
 
 
-        //在该元素后面追加节点
-        function insertAfter(newElement, targetElement) {
-            var parent = targetElement.parentNode;
-            if (parent.lastChild == targetElement) {
-                // 如果最后的节点是目标元素，则直接添加。因为默认是最后
-                parent.appendChild(newElement);
-            } else {
-                parent.insertBefore(newElement, targetElement.nextSibling);
-                //如果不是，则插入在目标元素的下一个兄弟节点 的前面。也就是目标元素的后面
-            }
-        }
         insertAfter(selector,canvasObj);
 
 
@@ -1394,7 +1394,7 @@ var DrawTools =(function(){
 
                     var  points=getcurrentGraph().getPoints();
                     if(getDrawMode()=="circle"){
-                        let radius= getcurrentGraph().getRadius();
+                       let radius= getcurrentGraph().getRadius();
                         obj.end(points,radius);
                     }else{
                         obj.end(points);
@@ -1410,12 +1410,14 @@ var DrawTools =(function(){
         drawGrid:function(stepX,stepY){
             //如果该函数被调用说明网格功能开启
             isOpenDrawGrid=true;
-            if((stepX!=null)&&(stepY!=null)){
-                drawGridConfig.stepX=stepX;
-                drawGridConfig.stepY=stepY;
+            if(isBlank(stepY)){
+                stepY=drawGridConfig.stepY;
+            }
+            if(isBlank(stepX)){
+                stepY=drawGridConfig.stepX;
             }
             //执行画表格
-            drawGrid( drawGridConfig.stepX,drawGridConfig.stepY);
+            drawGrid(stepX,stepY);
 
         },
         //关闭网格线
