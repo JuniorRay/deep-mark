@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project.bak" beforeDir="false" afterPath="$PROJECT_DIR$/.project.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/Thumbs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jfinal.bat" beforeDir="false" afterPath="$PROJECT_DIR$/jfinal.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/CacherConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/CacherConst.java" afterDir="false" />
@@ -33,19 +32,18 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/undertow.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/undertow.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-3.3.1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.11.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.11.3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.12.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.12.4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/API说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/API说明.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/___极速打包部署.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/___极速打包部署.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/blog.sql" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/blog.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/undertow-config-demo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/undertow-config-demo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/启动说明/使用说明.png" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/使用说明.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/启动说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/启动说明.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -63,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1457">
-              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+              <caret line="202" selection-start-line="202" selection-end-line="202" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -87,19 +85,27 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="347">
-              <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+              <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/启动说明/启动说明.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/test.jpg">
-          <provider selected="true" editor-type-id="images" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/启动说明/API说明.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -116,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="587">
@@ -163,10 +169,10 @@
       <find>msdown</find>
       <find>onmouseuponmouseup</find>
       <find>DrawTools</find>
-      <find>onmouseup</find>
       <find>closeEnlarge</find>
       <find>selectorObj</find>
       <find>dragging</find>
+      <find>onmouseup</find>
     </findStrings>
     <replaceStrings>
       <replace>doClick</replace>
@@ -189,12 +195,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_header.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html" />
         <option value="$PROJECT_DIR$/启动说明/API说明.txt" />
-        <option value="$PROJECT_DIR$/启动说明/启动说明.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" />
+        <option value="$PROJECT_DIR$/启动说明/启动说明.txt" />
       </list>
     </option>
   </component>
@@ -318,8 +324,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/启动说明" />
       <recent name="$PROJECT_DIR$/src/main/webapp/assets/img/test" />
+      <recent name="$PROJECT_DIR$/启动说明" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/webapp/assets" />
       <recent name="$PROJECT_DIR$/src/main/webapp/assets/css/mark" />
@@ -356,12 +362,12 @@
       <workItem from="1580884586529" duration="1122000" />
       <workItem from="1581071956963" duration="598000" />
       <workItem from="1581396867283" duration="4188000" />
-      <workItem from="1581481408065" duration="7196000" />
+      <workItem from="1581481408065" duration="7858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78807000" />
+    <option name="totallyTimeSpent" value="79469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="6" />
@@ -467,27 +473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/启动说明/API说明.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/testHuman.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/启动说明/启动说明.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/启动说明/使用说明.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png">
@@ -513,7 +502,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
-          <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -534,7 +523,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1457">
-          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -548,6 +537,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="587">
           <caret line="1470" column="3" selection-start-line="1470" selection-start-column="3" selection-end-line="1470" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/启动说明/启动说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/启动说明/使用说明.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/启动说明/API说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
