@@ -57,12 +57,12 @@
         }
     });
  //恢复鼠标手型，并停止绘图,返回绘制的坐标
-//  var points=drawUtil.end();
-//清除图形,停止绘制
-//  drawUtil.clear();
+ //  var points=drawUtil.end();
+ //清除图形,停止绘制
+ //  drawUtil.clear();
 
  //画网格线
- //drawUtil.drawGrid()//如果为空，则默认10,10
+ //drawUtil.drawGrid()//如果为空，则默认10px 10px
  drawUtil.drawGrid(10,10);
 
  //关闭网格线
@@ -129,8 +129,8 @@ var DrawTools =(function(){
         setInterval(function(){
             var isOpen=isDevToolsOpened();
             if(isOpen){
-            window.location.reload();//强制刷新
-            alert("已经禁用开发者模式,不允许打开开发者选项，请关闭！")
+                window.location.reload();//强制刷新
+                alert("已经禁用开发者模式,不允许打开开发者选项，请关闭！")
             }
         })
     };
@@ -142,7 +142,7 @@ var DrawTools =(function(){
     /**绘图对象*/
     var context;
     /**绘制的图形列表*/
-    // var shapes=new Array();
+        // var shapes=new Array();
     var graphicType={'cursor':'cursor','line':'line','triangle':'triangle','rectangle':'rectangle','polygon':'polygon','circle':'circle','arrows':'arrows','parallelogram':'parallelogram','trapezoid':'trapezoid'};
     //背景图片绘制配置
     var bgPictureConfig={
@@ -166,8 +166,8 @@ var DrawTools =(function(){
         function drawImage(){
             if(selectRectTemp==null){//如果放大功能没启用
 
-                    context.drawImage(img,0,0,canvasObj.width,canvasObj.height);
-                    saveDrawingData();
+                context.drawImage(img,0,0,canvasObj.width,canvasObj.height);
+                saveDrawingData();
             }else{//放大功能开启后会执行如下
 
 
@@ -275,7 +275,7 @@ var DrawTools =(function(){
         //
         // })
 
-         isBackPoints=true;//是否已经返回点位
+        isBackPoints=true;//是否已经返回点位
 
         return points
     };
@@ -333,12 +333,12 @@ var DrawTools =(function(){
     /**清空全部*/
     var clearAll=function(isSaveOldData){
 
-            context.clearRect(0,0,canvasObj.width,canvasObj.height);
-            if(isSaveOldData){
+        context.clearRect(0,0,canvasObj.width,canvasObj.height);
+        if(isSaveOldData){
 
-            }
-           // 保存canvas绘画信息
-            saveDrawingData();
+        }
+        // 保存canvas绘画信息
+        saveDrawingData();
 
 
     };
@@ -361,7 +361,7 @@ var DrawTools =(function(){
                 return true;
             }
             //空对象 isOwnEmpty(obj)
-             let isEmptyObject=function(t){
+            let isEmptyObject=function(t){
 
                 for(var key in t){
                     return false
@@ -456,7 +456,7 @@ var DrawTools =(function(){
                 if(isNull(points)){
                     return;
                 }
-               var  firstVal=points.shift();
+                var  firstVal=points.shift();
                 size=points.length;
                 return firstVal;
             },
@@ -725,9 +725,13 @@ var DrawTools =(function(){
     var mouseDown = function(e){
         // /**恢复canvas面版轨迹信息**/
         // restoreDrawingData();
-        if(ctrlConfig.kind!=graphicType.polygon){//多边形目前如果保存上一次记录会出现三角形重影bug
+        //多边形目前如果保存上一次记录会出现三角形重影bug,所以不保存
+        if(ctrlConfig.kind!=graphicType.polygon){//selectRectTemp==null如果放大功能没启用
+            // if(selectRectTemp=null){
             // 保存canvas绘画信息
             saveDrawingData();
+            // }
+
         }
 
         // debugger
@@ -737,28 +741,28 @@ var DrawTools =(function(){
         if(btnNum==0){
             // console.log("选择："+ctrlConfig.kind);
             //全局记录点位信息
-/*
-            points.push({//顶点
-                x: e.pageX - cvsClientRect.x,
-                y: e.pageY - cvsClientRect.y
-            });*/
+            /*
+                        points.push({//顶点
+                            x: e.pageX - cvsClientRect.x,
+                            y: e.pageY - cvsClientRect.y
+                        });*/
             // console.log(points);
             //如果是多边形,返回顶点.如果圆则返回圆心坐标,和半径
-         /*   for (var i = 0; i < points.length; i++) {
-                var point = points[i];
-                point.x = parseInt(point.x);
-                point.y = parseInt(point.y);
+            /*   for (var i = 0; i < points.length; i++) {
+                   var point = points[i];
+                   point.x = parseInt(point.x);
+                   point.y = parseInt(point.y);
 
-                // console.log( point.x+"==="+ point.y);
-                // if(btnNum==2){
-                //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
-                //     console.log(point);
-                //     console.log( point.x+"==="+ point.y);
-                // }else{
-                //     console.log( point);
-                // }
-            }
-            console.log(point); // 先左键 再右键结束*/
+                   // console.log( point.x+"==="+ point.y);
+                   // if(btnNum==2){
+                   //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
+                   //     console.log(point);
+                   //     console.log( point.x+"==="+ point.y);
+                   // }else{
+                   //     console.log( point);
+                   // }
+               }
+               console.log(point); // 先左键 再右键结束*/
             //设置起始点
             switch(ctrlConfig.kind){
 
@@ -845,11 +849,11 @@ var DrawTools =(function(){
             }
         }else if(btnNum==2){
             // console.log("右键由于结束多边形绘制");
- /*           points.push({//结束点
-                x: e.pageX - cvsClientRect.x,
-                y: e.pageY - cvsClientRect.y
-            });
-            console.log(points);// 直接右键结束时 所有顶点的坐标*/
+            /*           points.push({//结束点
+                           x: e.pageX - cvsClientRect.x,
+                           y: e.pageY - cvsClientRect.y
+                       });
+                       console.log(points);// 直接右键结束时 所有顶点的坐标*/
             // console.log((points[points.length-1]).x+"==="+(points[points.length-1]).y);// 右键结束点的坐标
 
 
@@ -859,29 +863,32 @@ var DrawTools =(function(){
                     var p=new Point(e.offsetX,e.offsetY);
                     getcurrentGraph().add(p);//添加到
                     // repaint();// 重绘
-                    // 保存canvas绘画信息
+                    // if(selectRectTemp==null){//selectRectTemp==null如果放大功能没启用
+                    //保存canvas绘画信息
                     saveDrawingData();
+                    // }
+
                     getcurrentGraph().draw();// 开始绘制图形
-                   var points= stopDrawing();//结束绘制
+                    var points= stopDrawing();//结束绘制
 
                 }
             }
 
 
             //如果是多边形,返回顶点.如果圆则返回圆心坐标,和半径
-         /*   for (var i = 0; i < points.length; i++) {
-                // var point = points[i];
-                // point.x = parseInt(point.x);
-                // point.y = parseInt(point.y);
-                // console.log( point.x+"==="+ point.y);
-                // if(btnNum==2){
-                //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
-                //     console.log(point);
-                //     console.log( point.x+"==="+ point.y);
-                // }else{
-                //     console.log( point);
-                // }
-            }*/
+            /*   for (var i = 0; i < points.length; i++) {
+                   // var point = points[i];
+                   // point.x = parseInt(point.x);
+                   // point.y = parseInt(point.y);
+                   // console.log( point.x+"==="+ point.y);
+                   // if(btnNum==2){
+                   //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
+                   //     console.log(point);
+                   //     console.log( point.x+"==="+ point.y);
+                   // }else{
+                   //     console.log( point);
+                   // }
+               }*/
 
 
 
@@ -999,8 +1006,11 @@ var DrawTools =(function(){
         if(isDrawing()){
             //加这一行的目的在于画笔切换成多边形时，防止丢掉上一个非多边形图形
             if(ctrlConfig.kind!=graphicType.polygon){//多边形目前如果保存上一次记录会出现三角形重影bug
+                // if((selectRectTemp==null)){////selectRectTemp==null如果放大功能没启用
                 // 保存canvas绘画信息
                 saveDrawingData();
+                // }
+
             }
             /**恢复canvas面版轨迹信息**/
             restoreDrawingData() ;
@@ -1029,8 +1039,11 @@ var DrawTools =(function(){
                 getcurrentGraph().draw();
             }
             var points= stopDrawing();//停止绘制
+            // if(selectRectTemp==null){//selectRectTemp==null如果放大功能没启用
             //保存canvas绘画信息
             saveDrawingData();
+            // }
+
         }
     };
 
@@ -1158,6 +1171,10 @@ var DrawTools =(function(){
         recoverEvent();
         //恢复放大前历史canvas轨迹；
         restoreDrawingByData(beforeEnlargeData);
+
+        beforeEnlargeData=null;//放大前数据清湖
+
+
     }
 
     //在该元素后面追加节点
@@ -1182,12 +1199,18 @@ var DrawTools =(function(){
 
         var selector=document.createElement("div");
         selector.style.position='fixed';
-        selector.style.border='3px solid blue';
-        selector.style.cursor='crosshair';
+        selector.style.border='1px solid red';
+        selector.style.cursor='copy';
         selector.style.display='none';
+        selector.setAttribute('id','selectorPane')
+        //如果存在则不创建
+        var selectorPaneObj=document.getElementById("selectorPane");
+        if(selectorPaneObj!=null){
+            selector=selectorPaneObj;
+        }else{
+            insertAfter(selector,canvasObj);
+        }
 
-
-        insertAfter(selector,canvasObj);
 
 
 
@@ -1201,7 +1224,12 @@ var DrawTools =(function(){
                 selectRect.top = msdown.y;//
                 this.moveSelector();//移动选取框
                 this.showSelector();//显示选取框
-                dragging = true;//
+                dragging = true;//是否选择状态
+
+                //记录放大前的状态（saveDrawingData执行后，drawingImageData会更新）
+                if(beforeEnlargeData==null){
+                    beforeEnlargeData=context.getImageData(0, 0, canvasObj.width, canvasObj.height);
+                }
             },
             //移动选取框
             moveSelector: function () {
@@ -1237,23 +1265,23 @@ var DrawTools =(function(){
                 var _box = canvasObj.getBoundingClientRect();
                 try{
 
-                    //记录放大前的状态（saveDrawingData执行后，drawingImageData会更新）
-                    //console.log(beforeEnlargeData);
-                    beforeEnlargeData=saveDrawingData();
-                    console.log(beforeEnlargeData);
 
                     //赋值给临时变量
                     selectRectTemp=selectRect;
                     _boxTemp=_box;
-                    console.log("selectEnd=====")
-                    console.log(selectRectTemp);
-                    console.log(_boxTemp);
-                    console.log(width);
-                    console.log(height);
-                    context.drawImage(canvasObj,selectRect.left-_box.left,selectRect.top-_box.top,selectRect.width,selectRect.height,0,0,width,height);
 
+                    context.drawImage(canvasObj,selectRect.left-_box.left,selectRect.top-_box.top,selectRect.width,selectRect.height,0,0,width,height);
+                    //加这一行的目的在于画笔切换成多边形时，防止丢掉上一个非多边形图形
+                    if(ctrlConfig.kind!=graphicType.polygon){//多边形目前如果保存上一次记录会出现三角形重影bug
+                        // if((selectRectTemp==null)){////selectRectTemp==null如果放大功能没启用
+                        // 保存canvas绘画信息
+                        saveDrawingData();
+                        // }
+
+                    }
 
                 }catch (e){
+                    console.error(e)
                 }
                 this.resetSelector();
                 selector.style.width = 0;
@@ -1265,23 +1293,32 @@ var DrawTools =(function(){
                 selector.style.display = "none";
             }
         };
+        setTimeout(function () {
+            addSelectEventListen();
+        });
 
-        canvasObj.onmousedown = function(e){
-            var x = e.clientX,y = e.clientY;
-            e.preventDefault();//阻止浏览器默认事件
-            selectorObj.selectStart.call(selectorObj,x,y);
-        };
-        canvasObj.onmousemove  = function(e){
-            var x = e.clientX,y = e.clientY;
-            e.preventDefault();
-            if(dragging){
-                selectorObj.selectorStretch.call(selectorObj,x,y);
-            }
-        };
-        canvasObj.onmouseup = function(e){
-            e.preventDefault();
-            selectorObj.selectEnd.call(selectorObj);
-        };
+        //加载放大时候的监听
+        function  addSelectEventListen(){
+            //此处发现用canvas去进行鼠标松开监听时有时候失效，于是改为document监听
+            document.onmouseup = function(e){
+                e.preventDefault();
+                selectorObj.selectEnd.call(selectorObj);
+            };
+            canvasObj.onmousedown = function(e){
+                var x = e.clientX,y = e.clientY;
+                e.preventDefault();//阻止浏览器默认事件
+                selectorObj.selectStart.call(selectorObj,x,y);
+            };
+            canvasObj.onmousemove  = function(e){
+                var x = e.clientX,y = e.clientY;
+                e.preventDefault();
+                if(dragging){
+                    selectorObj.selectorStretch.call(selectorObj,x,y);
+                }
+            };
+
+        }
+
     }
 
 
@@ -1394,7 +1431,7 @@ var DrawTools =(function(){
 
                     var  points=getcurrentGraph().getPoints();
                     if(getDrawMode()=="circle"){
-                       let radius= getcurrentGraph().getRadius();
+                        let radius= getcurrentGraph().getRadius();
                         obj.end(points,radius);
                     }else{
                         obj.end(points);

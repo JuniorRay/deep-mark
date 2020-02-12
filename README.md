@@ -37,6 +37,7 @@
  
  //初始化，(如果浏览器不支持H5，会初始化失败，返回false)
  
+ 
  drawUtil.init({
  
         'canvasId':'cvs4',

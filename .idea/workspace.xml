@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.project.bak" beforeDir="false" afterPath="$PROJECT_DIR$/.project.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/Thumbs.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jfinal.bat" beforeDir="false" afterPath="$PROJECT_DIR$/jfinal.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/CacherConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/witeye/iaac/mark/CacherConst.java" afterDir="false" />
@@ -32,24 +33,19 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logging.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/undertow.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/undertow.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-3.3.1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.11.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.11.3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.12.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/jquery/jquery.min-v1.12.4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload2020/2/11/fc565638-0243-464f-bdf4-ad6fdf614be0.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/API说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/API说明.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/___极速打包部署.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/___极速打包部署.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/blog.sql" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/blog.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/undertow-config-demo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/undertow-config-demo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/启动说明/使用说明.png" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/使用说明.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/启动说明/启动说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/启动说明/启动说明.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -64,6 +60,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1457">
+              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -75,17 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" selection-start-line="43" selection-end-line="64" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/启动说明/启动说明.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="347">
+              <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -106,19 +108,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/启动说明/API说明.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3225">
-              <caret line="215" column="54" lean-forward="true" selection-start-line="215" selection-start-column="54" selection-end-line="215" selection-end-column="54" />
+            <state relative-caret-position="331">
+              <caret line="455" column="26" selection-start-line="455" selection-start-column="26" selection-end-line="455" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -126,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="587">
+              <caret line="1470" column="3" selection-start-line="1470" selection-start-column="3" selection-end-line="1470" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -144,9 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#3</find>
-      <find>alert</find>
-      <find>submit-wrap</find>
       <find>edit-tool-wrap</find>
       <find>subTool</find>
       <find>softSz-btn-primary_space</find>
@@ -167,7 +157,16 @@
       <find>image-list-tool</find>
       <find>$.ajax</find>
       <find>导入</find>
+      <find>selectRectTemp</find>
+      <find>selectEnd</find>
       <find>gridCe</find>
+      <find>msdown</find>
+      <find>onmouseuponmouseup</find>
+      <find>DrawTools</find>
+      <find>onmouseup</find>
+      <find>closeEnlarge</find>
+      <find>selectorObj</find>
+      <find>dragging</find>
     </findStrings>
     <replaceStrings>
       <replace>doClick</replace>
@@ -188,19 +187,20 @@
         <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_side.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_header.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html" />
         <option value="$PROJECT_DIR$/启动说明/API说明.txt" />
         <option value="$PROJECT_DIR$/启动说明/启动说明.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/_view/index/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="y" value="96" />
+    <option name="x" value="54" />
+    <option name="y" value="38" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
   </component>
@@ -242,6 +242,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="_view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deepMark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deepMark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="_view" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deepMark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deepMark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="_view" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deepMark" type="b2602c69:ProjectViewProjectNode" />
@@ -338,12 +356,12 @@
       <workItem from="1580884586529" duration="1122000" />
       <workItem from="1581071956963" duration="598000" />
       <workItem from="1581396867283" duration="4188000" />
-      <workItem from="1581481408065" duration="1228000" />
+      <workItem from="1581481408065" duration="7196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72839000" />
+    <option name="totallyTimeSpent" value="78807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="6" />
@@ -405,13 +423,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/test.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_side.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/admin.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/detail.html" />
@@ -442,19 +453,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/jquery-1.4.4.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -469,24 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" selection-start-line="43" selection-end-line="64" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/启动说明/API说明.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -509,17 +493,61 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/test/test.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="242">
+            <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/drawing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="215" column="54" lean-forward="true" selection-start-line="215" selection-start-column="54" selection-end-line="215" selection-end-column="54" />
+        <state relative-caret-position="331">
+          <caret line="455" column="26" selection-start-line="455" selection-start-column="26" selection-end-line="455" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/common/_admin_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/_view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1457">
+          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/DrawTools.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="587">
+          <caret line="1470" column="3" selection-start-line="1470" selection-start-column="3" selection-end-line="1470" selection-end-column="3" />
         </state>
       </provider>
     </entry>
