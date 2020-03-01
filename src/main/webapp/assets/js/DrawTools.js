@@ -5,7 +5,6 @@
  * @date Oct 12, 2019
  *
  * 调用方式：
-
  var drawUtil=new DrawTools();
  //初始化，(如果浏览器不支持H5，会初始化失败，返回false)
  drawUtil.init({
@@ -29,11 +28,9 @@
     // });
  //加载图片
  drawUtil.setBgPic("test.jpg");
-
  // 鼠标=cursor，线条=line，三角形=triangle，矩形=rectangle，多边形=polygon，
  // 圆形=circle，箭头=arrows，平行四边形=parallelogram，梯形=trapezoid
  // drawUtil.begin('cursor');//选择画笔
-
  // drawUtil.begin('line');//选择画笔
  // drawUtil.begin('triangle');//选择画笔
  // drawUtil.begin('rectangle');//选择画笔
@@ -42,12 +39,10 @@
  // drawUtil.begin('arrows');//选择画笔
  // drawUtil.begin('parallelogram');//选择画笔
  // drawUtil.begin('trapezoid');//选择画笔
-
  drawUtil.callback({//框选结束后，底层会自动调用该函数
         end:function(e,r){
             console.log(e);
            alert(e.length) ;
-
             for(var i in e){
                 console.log("x坐标："+e[i].getX()+"y坐标："+e[i].getY());
             }
@@ -60,11 +55,9 @@
  //  var points=drawUtil.end();
  //清除图形,停止绘制
  //  drawUtil.clear();
-
  //画网格线
  //drawUtil.drawGrid()//如果为空，则默认10px 10px
  drawUtil.drawGrid(10,10);
-
  //关闭网格线
  drawUtil.closeGrid();
  //开启框选canvas放大功能
@@ -73,10 +66,8 @@
  drawUtil.closeEnlarge();,
  //恢复原有的框选点位的事件(从放大canvas功能切换成框选图片功能时用)
  drawUtil.recoverEvent();
-
  //获取当前画笔的模式（三角形，矩形等等,返回英文）
  drawUtil.getDrawMode();
-
  */
 var DrawTools =(function(){
     "use strict";//"use strict" 的目的是指定代码在严格条件下执行。严格模式下你不能使用未声明的变量。
@@ -275,7 +266,7 @@ var DrawTools =(function(){
         //
         // })
 
-        isBackPoints=true;//是否已经返回点位
+        isBackPoints=false;//是否已经返回点位
 
         return points
     };
@@ -332,7 +323,7 @@ var DrawTools =(function(){
     };
     /**清空全部*/
     var clearAll=function(isSaveOldData){
-
+        isBackPoints==false;
         context.clearRect(0,0,canvasObj.width,canvasObj.height);
         if(isSaveOldData){
 
@@ -361,7 +352,7 @@ var DrawTools =(function(){
                 return true;
             }
             //空对象 isOwnEmpty(obj)
-            let isEmptyObject=function(t){
+            var isEmptyObject=function(t){
 
                 for(var key in t){
                     return false
@@ -576,6 +567,12 @@ var DrawTools =(function(){
                 }else{
                     drawLine();
                 }
+            },
+            getPoints:function () {
+                var arr=[];
+                arr.push(start);
+                arr.push(end);
+                return arr;
             }
         }
     });
@@ -609,7 +606,7 @@ var DrawTools =(function(){
                 width=Math.abs(width);
             }
             //计算两点距离=平方根(width^2+height^2)
-            let c=Math.sqrt(Math.pow(width,2)+Math.pow(height,2));
+            var c=Math.sqrt(Math.pow(width,2)+Math.pow(height,2));
             return c;
         };
         var p=startPoint;
@@ -638,7 +635,7 @@ var DrawTools =(function(){
                 if(isNull(p)){
                     return null;
                 }
-                let arr=[];
+                var arr=[];
                 arr.push(p);
                 return arr;
             },
@@ -752,7 +749,6 @@ var DrawTools =(function(){
                    var point = points[i];
                    point.x = parseInt(point.x);
                    point.y = parseInt(point.y);
-
                    // console.log( point.x+"==="+ point.y);
                    // if(btnNum==2){
                    //     point.push((points[points.length-1]).x+"==="+(points[points.length-1]).y);
@@ -1044,6 +1040,11 @@ var DrawTools =(function(){
             saveDrawingData();
             // }
 
+        }else{//异常状态下移出canvas则停止绘制
+
+            stopDrawing();//停止绘制
+            isBackPoints=true;
+
         }
     };
 
@@ -1191,10 +1192,10 @@ var DrawTools =(function(){
 
     //框选放大canvas
     function  enlarge(){
-        var	width = canvasObj.width;
-        var	height = canvasObj.height;
-        var	selectRect = {};
-        var	dragging = false;
+        var width = canvasObj.width;
+        var height = canvasObj.height;
+        var selectRect = {};
+        var dragging = false;
         var msdown = {};
 
         var selector=document.createElement("div");
@@ -1427,19 +1428,27 @@ var DrawTools =(function(){
         //  该回调函数会实时获取，点位信息，结束点位选择后会调用改回调
         callback:function(obj){
             var timer=setInterval(function(){
-                if(isBackPoints!=false){//判断运行鼠标结束后，直接返回点位信息
+                // if(hasDrawing){//已经画过之后去获取坐标
 
-                    var  points=getcurrentGraph().getPoints();
-                    if(getDrawMode()=="circle"){
-                        let radius= getcurrentGraph().getRadius();
-                        obj.end(points,radius);
-                    }else{
-                        obj.end(points);
+                if(isBackPoints==false){//判断没有返回过坐标,运行鼠标结束后，直接返回点位信息
+                    if(!isBlank(getcurrentGraph())){
+                        var  points=getcurrentGraph().getPoints();
+                        if(getDrawMode()=="circle"){
+                            var radius= getcurrentGraph().getRadius();
+                            obj.end(points,radius);
+                        }else{
+                            obj.end(points);
+                        }
+                        isBackPoints=true;//是否返回点位的标志为复位，已经返回了点位
                     }
 
-                    isBackPoints=false;//是否返回点位的标志为复位
+
+
                     // clearInterval(timer);
                 }
+
+                // }
+
 
             })
         },
