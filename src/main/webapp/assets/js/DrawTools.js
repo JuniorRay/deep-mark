@@ -128,7 +128,7 @@ var DrawTools =(function(){
     /**绘图容器*/
     var canvasObj;
     //获得canvas相对浏览器的偏移量
-    var cvsClientRect ;
+    // var cvsClientRect ;
 
     /**绘图对象*/
     var context;
@@ -152,6 +152,9 @@ var DrawTools =(function(){
             bgPictureConfig.pic=src;
         }
         var img = new Image();
+        img.crossOrigin = 'anonymous';//元素的跨域请求，不需要凭证
+        /**java服务端 ，记得同时也要添加请求头,解决跨域访问问题,controller.getResponse().addHeader("Access-Control-Allow-Origin", "*");**/
+        img.setAttribute('crossOrigin', 'anonymous');
         img.src =src;
         //画背景图
         function drawImage(){
@@ -1352,7 +1355,7 @@ var DrawTools =(function(){
             // canvasObj.onmousewheel = canvasObj.onmousewheel = roll ;// 给canvas绑定滑轮滚动事件
 
             //获得canvas相对浏览器的偏移量
-            cvsClientRect = canvasObj.getBoundingClientRect();
+            // cvsClientRect = canvasObj.getBoundingClientRect();
             //浏览器是否支持Canvas
             if (canvasObj.getContext){
                 /**绘图对象*/
