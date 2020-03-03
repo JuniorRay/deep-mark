@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Title: DrawingTools
  * Description: 基于canvas形状画图工具
  * @author JuniorRay
@@ -40,15 +40,24 @@
  // drawUtil.begin('parallelogram');//选择画笔
  // drawUtil.begin('trapezoid');//选择画笔
  drawUtil.callback({//框选结束后，底层会自动调用该函数
-        end:function(e,r){
-            console.log(e);
-           alert(e.length) ;
-            for(var i in e){
-                console.log("x坐标："+e[i].getX()+"y坐标："+e[i].getY());
-            }
-             if(drawUtil.getDrawMode()=="circle"){
-                console.log("radius:"+r);
-            }
+        end:function(points,radius,realPoints,realRadiusObj){
+        //points,radius屏幕显示的坐标,圈选的半径；realPoint图片实际大小的对应坐标(服务端实际裁剪可使用)
+        //realRadiusObj图片实际半轴对象，虽然视野中画的是圈选，但是实际中可能是椭圆a,b轴(服务端实际裁剪可使用),
+              for(var i in points){
+                        //points屏幕显示的坐标
+                        console.log("x坐标："+points[i].getX()+" y坐标："+points[i].getY());
+                        //realPoint图片实际大小的对应坐标(服务端实际裁剪可使用)
+                        console.log("x坐标realPoints："+realPoints[i].getX()+" y坐标realPoints："+realPoints[i].getY());
+              }
+
+              if(drawUtil.getDrawMode()=="circle"){
+                        //radius屏幕显示的半径
+                        console.log("radius:"+radius);
+                        //realRadiusObj图片实际半轴对象，虽然视野中画的是圈选，但是实际中可能是椭圆a,b轴(服务端实际裁剪可使用),
+                        console.log("realRadiusX:"+realRadiusObj.radiusX)//X半轴长;
+                        console.log("realRadiusY:"+realRadiusObj.radiusY)//Y半轴长;
+
+              }
         }
     });
  //恢复鼠标手型，并停止绘图,返回绘制的坐标
@@ -152,10 +161,14 @@ var DrawTools =(function(){
             bgPictureConfig.pic=src;
         }
         var img = new Image();
+
         img.crossOrigin = 'anonymous';//元素的跨域请求，不需要凭证
         /**java服务端 ，记得同时也要添加请求头,解决跨域访问问题,controller.getResponse().addHeader("Access-Control-Allow-Origin", "*");**/
         img.setAttribute('crossOrigin', 'anonymous');
+
         img.src =src;
+
+
         //画背景图
         function drawImage(){
             if(selectRectTemp==null){//如果放大功能没启用
@@ -185,6 +198,15 @@ var DrawTools =(function(){
 
             }
         }
+
+        // img.onerror=function () {
+        //     //此处用的百度的地方，如有侵权请联系删除@author Junior,由于存在百度跨域问题，暂时注释
+        //     var errorImgPath="http://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs";
+        //     img.src=errorImgPath;
+        //     drawImage();
+        //     alert("图片路径资源异常，已经替换成默认图片");
+        //     img.onerror=null;//清空
+        // };
 
     };
 
@@ -1195,10 +1217,10 @@ var DrawTools =(function(){
 
     //框选放大canvas
     function  enlarge(){
-        var width = canvasObj.width;
-        var height = canvasObj.height;
-        var selectRect = {};
-        var dragging = false;
+        var	width = canvasObj.width;
+        var	height = canvasObj.height;
+        var	selectRect = {};
+        var	dragging = false;
         var msdown = {};
 
         var selector=document.createElement("div");
@@ -1325,9 +1347,170 @@ var DrawTools =(function(){
 
     }
 
-
-
     /***开启框选放大canvas 功能结束**/
+
+
+
+    //获取图片实际真实的原始大小
+    function getNaturalSize(imgPath) {
+        var natureSize = {};
+
+        var img = new Image();
+        img.src = imgPath;
+        natureSize.width = (parseFloat(img.width)+"").replace("px", "");
+        natureSize.height = (parseFloat(img.height)+"").replace("px", "");
+        // debugger
+        return natureSize;
+    }
+
+    //获取图片屏幕显示的大小
+    function getViewSize(canvas) {
+
+        var element = canvas;
+        var viewSize = {};
+
+        viewSize.height = (parseFloat(element.height) + "").replace("px", "");//去掉单位px
+        viewSize.width = (parseFloat(element.width) + "").replace("px", "");
+
+        return viewSize;
+    }
+    //获取X，Y的比例
+    function getPropForXY(canvas,imgPath){
+        // 获取大图原始实际大小
+        var natural = getNaturalSize(imgPath);
+        var natureWidth = natural.width;
+        var natureHeight = natural.height;
+        //获取显示比例大小
+        var viewSize = getViewSize(canvas);
+        var viewWidth = viewSize.width;
+        var viewHeight = viewSize.height;
+        var xyProp={};
+        // alert("v:"+ virtualWidth+ "===="+virtualHeight);
+        if(natureWidth==0||natureHeight==0){//图片为空时0，0处理
+            xyProp.kx=0;
+            xyProp.ky=0;
+            return xyProp;
+        }
+        //比列
+        var widthProp = viewWidth / natureWidth;
+        var heightProp = viewHeight / natureHeight;
+        xyProp.kx=widthProp;
+        xyProp.ky=heightProp;
+        return xyProp;
+    }
+    //由于原图的宽高比例未定，在视野中虽然是圈选，但是实际可能会成椭圆形，也就是说，在视野中画圆，最后实际截取的可能将会是椭圆，
+    // 那么设计成返回一个对象{radiusX:a,radiusY:b}会比较合理
+    var getRealRadiusObj=function(obj){
+        // debugger
+        var canvas=obj.canvas,imgPath=obj.imgPath,radius=obj.radius;
+
+        //获取比列
+        var prop=getPropForXY(canvas,imgPath);
+        //半轴对象
+        var realRadiusObj={};
+        //宽高的比列
+        var widthProp =  prop.kx;
+        var heightProp =  prop.ky;
+        if(widthProp==0||heightProp==0){
+            realRadiusObj.radiusX=0;
+            realRadiusObj.radiusY=0;
+
+            return realRadiusObj;
+        }
+        var natureX_radius = parseInt(radius / widthProp);
+        var natureY_radius = parseInt(radius / heightProp);
+
+        realRadiusObj.radiusX=natureX_radius;
+        realRadiusObj.radiusY=natureY_radius;
+
+        return realRadiusObj;
+    };
+    /**由图片elementId和原来的坐标point{x:x,y:y}显示的坐标==》获取 真实坐标pointReal{x:x,y:y}
+     * //获取实际坐标
+     *   var pointReal=getRealPoint({
+     *           canvas:canvasObj,//canvas对象
+     *           point:point,//Point对象
+     *           imgPath:bgPictureConfig.pic//背景图片路径
+     *   });
+     * **/
+    var getRealPoint=function(obj){
+//                debugger
+        var canvas=obj.canvas;
+        var point=obj.point;
+        var imgPath=obj.imgPath;
+
+
+        //比列转换
+        function propConversion(canvas,point,imgPath){
+
+            //获取比列
+            var prop=getPropForXY(canvas,imgPath);
+
+            //宽高的比列
+            var widthProp =  prop.kx;
+            var heightProp =  prop.ky;
+            // debugger
+            if(widthProp==0||widthProp==0){//图片为空时0，0处理
+                //实际裁剪大小
+                var pointReal= new Point(0,0);
+                return pointReal
+            }
+            var x=point.getX();
+            var y=point.getY();
+
+            var natureX = parseInt(x / widthProp);
+            var natureY = parseInt(y / heightProp);
+
+            var pointReal= new Point(natureX,natureY);
+
+            return pointReal;
+
+        }
+        //比列转换,返回真实坐标点位
+        return  propConversion(canvas,point,imgPath);
+
+    };
+    //屏幕视野坐标，转换成原本图片大小的真实坐标
+    function toRealPoints(points){
+        // console.log(points);
+        if(isBlank(points)){
+            return null;
+        }
+
+        var realPoints=[];
+        for(var i=1;i<=points.length;i++){
+            var point=points[i-1];
+
+            var x = points[i-1].getX();
+            var y = points[i-1].getY();
+
+            //获取实际坐标
+            var pointReal=getRealPoint({
+                canvas:canvasObj,//canvas对象
+                point:point,//Point对象
+                imgPath:bgPictureConfig.pic//背景图片路径
+            });
+            realPoints.push(pointReal);
+
+        }
+        return realPoints;
+
+    }
+
+    //屏幕视野坐标，转换成原本图片大小的真实坐标
+    function toRealRadius(radius){
+        // debugger
+        //获取实际半径，可能变成了椭圆
+        var realRadiusObj=getRealRadiusObj({
+            canvas:canvasObj,//canvas对象
+            radius:radius,//视野画面中圈选显示的半径
+            imgPath:bgPictureConfig.pic//背景图片路径
+        });
+
+        return realRadiusObj;
+
+    }
+
 
     return{
         // isNull:isNull,
@@ -1435,12 +1618,28 @@ var DrawTools =(function(){
 
                 if(isBackPoints==false){//判断没有返回过坐标,运行鼠标结束后，直接返回点位信息
                     if(!isBlank(getcurrentGraph())){
+                        //获取屏幕视野中的坐标
                         var  points=getcurrentGraph().getPoints();
+                        //获取图片实际点位坐标
+                        var  realPoints=toRealPoints(points);
+
                         if(getDrawMode()=="circle"){
                             var radius= getcurrentGraph().getRadius();
-                            obj.end(points,radius);
+                            /**获取图片实际的半径坐标对象（有可能实际是椭圆，所以设计成对象）
+                             * realRadiusObj={
+                             *      radiusX:natureX_radius_Int,
+                             *      radiusY:natureY_radius_Int
+                             * }
+                             * **/
+                            var  realRadiusObj=toRealRadius(radius);
+                            //执行end回调
+                            obj.end.apply(this,[points,radius,realPoints,realRadiusObj]);
+
                         }else{
-                            obj.end(points);
+                            //执行回调
+                            obj.end.apply(this,[points,'',realPoints,'']);
+
+
                         }
                         isBackPoints=true;//是否返回点位的标志为复位，已经返回了点位
                     }

@@ -107,25 +107,25 @@
 
  drawUtil.callback({//框选结束后，底层会自动调用该函数
  
-        end:function(e,r){
-        
-            console.log(e);
+       end:function(points,radius,realPoints,realRadiusObj){
+	     //points,radius屏幕显示的坐标,圈选的半径；realPoint图片实际大小的对应坐标(服务端实际裁剪可使用)
+             //realRadiusObj图片实际半轴对象，虽然视野中画的是圈选，但是实际中可能是椭圆a,b轴(服务端实际裁剪可使用),
             
-           alert(e.length) ;
-           
+              for(var i in points){
+                        //points屏幕显示的坐标
+                        console.log("x坐标："+points[i].getX()+" y坐标："+points[i].getY());
+                        //realPoint图片实际大小的对应坐标(服务端实际裁剪可使用)
+                        console.log("x坐标realPoints："+realPoints[i].getX()+" y坐标realPoints："+realPoints[i].getY());
+              }
 
-            for(var i in e){
-            
-                console.log("x坐标："+e[i].getX()+"y坐标："+e[i].getY());
-                
-            }
-            
-             if(drawUtil.getDrawMode()=="circle"){
-             
-                console.log("radius:"+r);
-                
-            }
-            
+              if(drawUtil.getDrawMode()=="circle"){
+                        //radius屏幕显示的半径
+                        console.log("radius:"+radius);
+                        //realRadiusObj图片实际半轴对象，虽然视野中画的是圈选，但是实际中可能是椭圆a,b轴(服务端实际裁剪可使用),
+                        console.log("realRadiusX:"+realRadiusObj.radiusX)//X半轴长;
+                        console.log("realRadiusY:"+realRadiusObj.radiusY)//Y半轴长;
+
+              }
         }
         
     });
