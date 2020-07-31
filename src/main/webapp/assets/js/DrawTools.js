@@ -139,6 +139,11 @@ var DrawTools =(function(){
     //获得canvas相对浏览器的偏移量
     // var cvsClientRect ;
 
+    //记录图片的大小
+    var imageRealSize = {
+        width:0,
+        height:0
+    };
     /**绘图对象*/
     var context;
     /**绘制的图形列表*/
@@ -192,11 +197,23 @@ var DrawTools =(function(){
         }
         if(img.complete) {
             drawImage();
+            getSize();
         } else {
             img.onload = function() {
                 drawImage();
-
+                getSize();
             }
+        }
+        //获取图片的大小对象
+        function getSize(){
+
+            var natureSize = {};
+            natureSize.width = (parseFloat(img.width)+"").replace("px", "");
+            natureSize.height = (parseFloat(img.height)+"").replace("px", "");
+            // debugger
+            //给全局参数进行记录
+            imageRealSize = natureSize;
+
         }
 
         // img.onerror=function () {
@@ -1354,11 +1371,14 @@ var DrawTools =(function(){
     //获取图片实际真实的原始大小
     function getNaturalSize(imgPath) {
         var natureSize = {};
-
+        // debugger
         var img = new Image();
         img.src = imgPath;
         natureSize.width = (parseFloat(img.width)+"").replace("px", "");
         natureSize.height = (parseFloat(img.height)+"").replace("px", "");
+        if(natureSize.width == 0 && natureSize.height == 0){//针对vue渲染new Image() 获取宽高失效的情况
+            natureSize = imageRealSize;
+        }
         // debugger
         return natureSize;
     }

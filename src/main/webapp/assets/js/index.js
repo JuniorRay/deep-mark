@@ -165,13 +165,17 @@
 
         //选择结束后，底层会自动调用该函数
         drawUtil.callback({//框选结束后，底层会自动调用该函数，目前只支持多边形，明天我有空再改改
-            end:function(e,r){
+            end:function(e,r,realPoint){
                 // console.log(e);
                 // alert(e.length) ;
 
                 for(var i in e){
                     console.log("x坐标："+e[i].getX()+"  y坐标："+e[i].getY());
                 }
+                for(var i in realPoint){
+                    console.log("x坐标(real)："+realPoint[i].getX()+"  y坐标(real)："+realPoint[i].getY());
+                }
+
                 if(drawUtil.getDrawMode()=="circle"){
                     console.log("radius:"+r);
                 }
