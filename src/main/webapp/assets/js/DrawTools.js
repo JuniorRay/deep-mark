@@ -442,12 +442,12 @@ var DrawTools =(function(){
     /**多角形（三角形、矩形、多边形），由多个点组成*/
     var Poly=(function(pointsParam){
 
-        var points=isNull(pointsParam)?new Array():pointsParam;
-        var size=points.length;
+        var points = isNull(pointsParam)?new Array():pointsParam;
+        var size = points.length;
         // console.log(size);
         return{
             set:function(pointsPara){
-                points=pointsPara;
+                points = pointsPara;
             },
             getSize:function(){
                 return size;
@@ -472,8 +472,14 @@ var DrawTools =(function(){
                 if(isNull(points)){
                     points=new Array();
                 }
-                var tempSize=points.push(p);
-                size=tempSize;
+                points.push(p);
+                var polySet = new Set(points);//去重点位使用
+                points=Array.from(polySet);//再次转为Array，实现去重
+                var tempSize = points.length;
+                size = tempSize;
+
+                /* var tempSize=points.push(p);
+                 size=tempSize;*/
                 return tempSize;
 
             },
@@ -497,6 +503,9 @@ var DrawTools =(function(){
                 if(isNull(points)){
                     return null;
                 }
+                // var polySet = new Set(points);//去重点位使用
+                // points=Array.from(polySet);//再次转为Array，实现去重
+
                 //过滤左键和右键同时点击产生的重复点位
                 for(var i in points){
                     if(i!=-1){//过滤掉-1时存储的临时点位
@@ -510,7 +519,7 @@ var DrawTools =(function(){
                                 size=points.length;
 
                                 console.log("删除的重复点位为："+i+":"+x+"======"+y);
-                                console.log("points-size=="+points.length)
+                                console.log("points的size=="+points.length)
 
                             }
 
@@ -940,6 +949,7 @@ var DrawTools =(function(){
 
     //鼠标移动（拖动，根据鼠标移动的位置不断重绘图形）
     var mouseMove = function(e){
+        // console.log("鼠标移动时绘制区域"+e.offsetX+","+e.offsetY);
 
         if(isDrawing()&&hasStartPoint()){//检查是否开始绘制，检查是否有开始坐标点
 
@@ -1076,15 +1086,22 @@ var DrawTools =(function(){
                 // repaint();
                 getcurrentGraph().draw();
             }
-            var points= stopDrawing();//停止绘制
+            // if(getDrawMode()!="polygon"){//多边形移出的时候，可以继续绘制
+                // stopDrawing();//停止绘制
+                //保存canvas绘画信息
+                // saveDrawingData();
+            // }
+
+
             // if(selectRectTemp==null){//selectRectTemp==null如果放大功能没启用
-            //保存canvas绘画信息
-            saveDrawingData();
+            // //保存canvas绘画信息
+            // saveDrawingData();
             // }
 
         }else{//异常状态下移出canvas则停止绘制
-
-            stopDrawing();//停止绘制
+            // if(getDrawMode()!="polygon"){//多边形移出的时候，可以继续绘制
+                stopDrawing();//停止绘制
+            // }
             isBackPoints=true;
 
         }
@@ -1234,10 +1251,10 @@ var DrawTools =(function(){
 
     //框选放大canvas
     function  enlarge(){
-        var	width = canvasObj.width;
-        var	height = canvasObj.height;
-        var	selectRect = {};
-        var	dragging = false;
+        var width = canvasObj.width;
+        var height = canvasObj.height;
+        var selectRect = {};
+        var dragging = false;
         var msdown = {};
 
         var selector=document.createElement("div");
