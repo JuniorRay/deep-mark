@@ -1,6 +1,7 @@
 ﻿# DeepMark一个基于网页的目标检测深度学习图片数据web标注工具，方便一个团队合作标注目标检测数据集。
 不需要额外安装任何软件或者插件，只需要该电脑上有浏览器即可
 
+![Image text](https://github.com/JuniorRay/DeepMark/blob/master/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.png?raw=true)
 .
 深度学习图片标记工具项目启动步骤
 
