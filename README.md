@@ -21,7 +21,7 @@
 
 7.支持：框选放大，翻转，辅助线，旋转
 
-
+```javascript
 
 //禁用浏览器右键，以及开发者模式
 // Utils.banBrowserDefaultMouseEvents();
@@ -210,8 +210,7 @@
       
   });
   
- *
- * **/
+```
 
 
 
