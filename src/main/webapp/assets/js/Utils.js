@@ -10,7 +10,7 @@ Utils.banBrowserDefaultMouseEvents=Utils.prototype.banBrowserDefaultMouseEvents=
     }
     /**禁用f12等开发者模式**/
     //禁用右键（防止右键查看源代码）
-    window.οncοntextmenu=function(){
+    window.oncontextmenu=function(){
         return false;
     }
     //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具）

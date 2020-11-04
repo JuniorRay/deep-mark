@@ -1,27 +1,53 @@
 ﻿# DeepMark一个基于网页的目标检测深度学习图片数据web标注工具，方便一个团队合作标注目标检测数据集。
 不需要额外安装任何软件或者插件，只需要该电脑上有浏览器即可
 
+![Alt text](./doc/image/index.png?raw=true "首页")
+![Alt text](./doc/image/example.png?raw=true "框选")
 
+##深度学习图片标记工具内部实现流程
+
+![Alt text](./doc/image/sort.png?raw=true "框选")
 
 ##深度学习图片标记工具项目启动步骤
 
 0.启动路径为 MarkServerConfig.java,右键main 运行
 
+![Alt text](./doc/image/run-main.png?raw=true "mian")
+
 1.使用前请传图片，默认上传位置在config-dev.txt
+
+![Alt text](./doc/image/upload-path.png?raw=true "配置位置")
+![Alt text](./doc/image/import.png?raw=true "配置位置")
 
 2.支持多选框功能任意切换,具体用法请参考demo
 
-3.Utils.js中支持禁用开发者模式，方便加密、
+![Alt text](./doc/image/index.png?raw=true "首页")
+
+3.Utils.js中支持禁用开发者模式，方便加密
+
+![Alt text](./doc/image/f12.png?raw=true "禁用开发者模式")
+![Alt text](./doc/image/forbid.png?raw=true "禁用开发者模式效果")
 
 4.支持多画笔颜色选择
 
+![Alt text](./doc/image/color.png?raw=true "颜色")
+![Alt text](./doc/image/color-select.png?raw=true "颜色选择")
+
 5.返回点位接口已经预留在drawlltil.callback
+
+![Alt text](./doc/image/callback.png?raw=true "callback")
+![Alt text](./doc/image/cood.png?raw=true "cood")
 
 6.支持：点，线，矩形，鼠标，梯形，三角形，多边形，圆形，箭头，平行四边等画笔工具
 
+![Alt text](./doc/image/choose.png?raw=true "choose")
+
 7.支持：框选放大，翻转，辅助线，旋转
 
-```javascript
+![Alt text](./doc/image/func.png?raw=true "func")
+![Alt text](./doc/image/roll.png?raw=true "roll")
+
+
 
 //禁用浏览器右键，以及开发者模式
 // Utils.banBrowserDefaultMouseEvents();
@@ -210,7 +236,8 @@
       
   });
   
-```
+ *
+ * **/
 
 
 

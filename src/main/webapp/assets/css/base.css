@@ -684,6 +684,7 @@ body .softSz-body,body .layui-form-label,label,.selectToolsDiv,.selectToolsDiv l
     text-align: center;
 }
 .layui-layer-content {
+    color: #fff;
     background-color: #0a2038;
     position: relative;
 }

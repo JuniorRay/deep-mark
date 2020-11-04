@@ -30,6 +30,7 @@
         //初始化画笔宽度
         var tempLineWidth=1;
         //初始化图片路径
+        // var imgPath="/assets/img/test/testHuman.jpg";
         var imgPath="/assets/img/test/test.png";
 
 
@@ -320,6 +321,14 @@
             $(this).click(function(){
                 var path=$(".image-item.selected").data("path")||'';
                 path=path.replace('/res?path=','');
+                if(path==null||path==""){
+                    var msg="请先上传图片";
+                    layer.msg(msg);
+                    layer.tips(msg, $("#importBtn"), {
+                        tips: [1, '#3d7af5'],
+                    });
+                    return
+                };
                 if(rotateStyle=="rollingOverLeft"){//左右翻转
                     rollingOver(path,1);
                 }else if(rotateStyle=="rollingOverUp"){//上下翻转
@@ -371,7 +380,14 @@
             $(this).click(function(){
                 var path=$(".image-item.selected").data("path")||"";
                 path=path.replace('/res?path=','');
-
+                if(path==null||path==""){
+                    var msg="请先上传图片";
+                    layer.msg(msg);
+                    layer.tips(msg, $("#importBtn"), {
+                        tips: [1, '#3d7af5'],
+                    });
+                    return
+                };
 
                 if(rotateStyle=="rightRotate"){
 
